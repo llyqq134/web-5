@@ -1,0 +1,11 @@
+th {
+    max-width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+button {
+    width: 100px;
+}

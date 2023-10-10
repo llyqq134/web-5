@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table style="border: 1px solid black">
+        <caption><b>список товаров</b></caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <th>Наименование товара</th>
+            <th>Стоимость</th>
+            <th>Фотография товара</th>
+            <th>Описание товара</th>
+        </tr>
+        <tr>
+            <th>Tango</th>
+            <th>90</th>
+            <th><img src="images/Tango_icon.jpg"></th>
+            <th>Натуральная пища для выживания на поле боя.</th>
+        </tr>
+        <tr>
+          <th>Quelling blade</th>
+          <th>100</th>
+          <th><img src="images/Quelling_Blade_icon.jpg"></th>
+          <th>Топор павшего гнома, позволяющий с лёгкостью продираться
+            сквозь лес.</th>
+        </tr>
+        <tr>
+          <th>Magic stick</th>
+          <th>200</th>
+          <th><img src="images/Magic_Stick_icon.jpg"></th>
+          <th>Простая волшебная палочка, в которой концентрируют
+            магическую энергию начинающие волшебники и великие колдуны.</th>
+        </tr>
+    </table>
+    <input type="text" name="field1">
+    <input type="text" name="field2">
+    <button onclick="onClickButton(this)">Кнопка</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
