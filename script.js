@@ -1,22 +1,15 @@
 function getSum(el) {
-    let select = document.getElementsByName("product");
-    let productType = select[0];
+    let product = document.getElementsByName("product");
+    let input = document.getElementById("input");
     let prices = [90, 100, 200];
-    let amounts = [0, 0, 0];
-    let priceIndex = parseInt(productType.value) - 1;
-
-    if (priceIndex >= 0) {
-        amounts[priceIndex]++;
+    if (input.value.match(/[0-9]/g) != input.value) {
+        alert("Числовое поле не соответствует числу");
     }
-
-    let sum = 0;
-     for(let i = 0; i < prices.length; ++i) {
-        sum += amounts[i] * prices[i];
+    else {
+        let result = input.value * prices[product[0].value - 1];
+        let r = document.getElementById("result");
+        r.innerHTML = result;
     }
-
-    let result = document.getElementById("result");
-    result.innerHTML = sum;
-
     return false;
 }
 
